@@ -1,0 +1,53 @@
+.hero-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    height: 350px;
+    cursor: pointer;
+}
+
+.hero-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-info {
+    padding: 16px;
+}
+
+.hero-info h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.hero-info p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+}
+
+.hero-card.expanded {
+    height: 500px;
+}
+
+.hero-card.expanded .hero-info {
+    opacity: 1;
+}
+
+.hero-card.expanded img {
+    height: 300px;
+}
