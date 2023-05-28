@@ -1,42 +1,6 @@
-.app-container {
-    width: 90%;
-    margin: 0 auto;
+.header{
     text-align: center;
 }
-
-h1 {
-    font-size: 3rem;
-    margin-bottom: 3rem;
-}
-
-.hero-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.hero-card {
-    margin: 1rem;
-    width: 250px;
-    padding: 1rem;
-    border-radius: 10px;
-    background-color: #1d1d1d;
-    color: #fff;
-    box-shadow: 0 0 10px #000;
-    overflow: hidden;
-}
-
-.hero-card img {
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
-.hero-info h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.hero-info p {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+body {
+    font-family: 'Roboto', sans-serif;
 }

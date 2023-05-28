@@ -1,0 +1,18 @@
+.cart-close-button {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-close-button:hover {
+    background-color: #eee;
+}
+
+.cart-total {
+    margin-top: 10px;
+    font-weight: bold;
+}

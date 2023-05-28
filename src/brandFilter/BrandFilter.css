@@ -1,0 +1,33 @@
+.brand-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.brand-filter-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.brand-filter-button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.brand-filter-button.selected {
+    color: #fff;
+    background-color: #333;
+}
+
+.brand-filter-button:not(:last-child) {
+    margin-right: 10px;
+}

@@ -1,0 +1,153 @@
+
+.navbar {
+    position: relative;
+    z-index: 1;
+    background-color: #ffffff;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+.navbar.cart-open {
+    overflow: hidden;
+}
+.navbar.cart-open .navbar-container {
+    transform: translateX(-300px);
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 40px;
+    margin-right: 8px;
+}
+
+.navbar-logo-text {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-logo-link{
+    text-decoration: none;
+    color: #000000;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-link {
+    color: #333333;
+    text-decoration: none;
+    margin-left: 16px;
+    font-size: 16px;
+}
+
+.navbar-mobile-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-toggle-icon {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #333333;
+    margin-bottom: 4px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggle-icon.active {
+    transform: rotate(45deg);
+}
+
+.navbar-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 16px;
+    box-shadow: 0 2px;
+}
+
+.cart-toggle-button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+.cart-overlay.open {
+    transform: translateX(0);
+}
+
+.cart {
+    padding: 20px;
+}
+
+.cart h2 {
+    margin-bottom: 10px;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart li {
+    margin-bottom: 10px;
+}
+.language-toggle {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.language-toggle button {
+    background: none;
+    border: 1px solid #4caf50;
+    border-radius: 4px;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0;
+}
+
+.language-toggle button:focus {
+    outline: none;
+}
+
+.language-toggle button:hover {
+
+}
+
